@@ -4,7 +4,7 @@ This subject focused on learning scripting languages for the web like **JavaScri
 
 ## Assignment
 
-This subject had one assignments.
+This subject had one assignment.
 
 The objective of the [assignment](Assignment/Assignment.pdf) was to simulate a user interacting with a website, by injecting JavaScript using a Google Chrome extension (Custom JavaScript for Websites 2).  
 
