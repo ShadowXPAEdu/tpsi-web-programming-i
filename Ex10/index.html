@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt">
+	<head>
+		<meta charset="utf-8">
+		<title>Exercício Restaurante</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+				
+	</head>
+	<body>
+		<div class="containter">
+			<div id="header">
+				<div class="logo">
+					<img src="assets/images/logo.jpg" />
+				</div>
+				<div id="profile">
+					<a href="#" id="link-login" class="link">LOGIN</a>
+					<a href="#" id="link-user" class="link inactive"><span id="username"></span></a>
+				</div>
+				<div id="login" class="section div-login">
+					<div id="login-content">
+						<div id="form-div">
+							<div id="login-form" class="login-div active">
+								<form id="form-login" method="post" action="?" onsubmit="return false;">
+									<input type="email" maxlength="50" id="email" name="eMail" placeholder="E-mail" />
+									<input type="password" maxlength="22" id="pass" name="Pass" placeholder="Password" />
+									<label for="relembrar">Relembrar E-mail</label>
+									<input type="checkbox" id="relembrar" />
+									<input type="submit" value="Entrar" />
+								</form>
+							</div>
+							<div id="logout-form" class="logout-div">
+								<input type="button" id="profile-button" value="Perfil" />
+								<input type="button" id="logout-button" value="Logout" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="navigation">
+				<ul id="products-filter" class="navigation-left">
+					<a href="#"><li>HOME</li></a>
+					<a href="#"><li>CARNE</li></a>
+					<a href="#"><li>PEIXE</li></a>
+					<a href="#"><li>SOBREMESA</li></a>
+					<a name="searchInput"><li><input type="text" placeholder="Search" id="search" /></li></a>
+				</ul>
+
+				<div id="cart" class="navigation-right">
+					<a href="#" id="cart-number">Cart (0)</a>
+				</div>
+			</div>
+
+			<div id="cartzinho">
+				<ul id="cart-items">
+				</ul>
+			</div>
+
+			<div id="page-body">
+				<div class="product-item template">
+					<div class="product-image">
+						<img src="" alt="" />
+					</div>
+					<div class="product-name"></div>
+					<div class="product-description"></div>
+					<div class="product-price"></div>
+					<div class="cart-add-item">
+						<input type="button" value="-" />
+						<input type="text" value="0" size="2" maxlength="2" />
+						<input type="button" value="+" />
+					</div>
+				</div>
+
+				<div id="products-list" class="products section active">
+					<!-- Stuff here -->
+				</div>
+
+				<div id="perfil" class="profile section inactive">
+					PERFIL!!!
+				</div>
+
+			</div>
+			<div id="footer">
+				&copy; 2017 My Bistro Restaurant 
+			</div>
+		</div>
+
+		<script src="assets/js/jquery.js"></script>
+		<script src="assets/js/js_productsData.js"></script>
+		<script src="assets/js/js_login.js"></script>
+		<script src="assets/js/js_search.js"></script>
+		<script src="assets/js/js_showcontent.js"></script>
+		<script src="assets/js/js_cart.js"></script>
+	</body>
+</html>
+
+
+

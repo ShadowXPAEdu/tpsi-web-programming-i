@@ -1,0 +1,12 @@
+{
+	"numero_aluno": "a21270246",
+	"turma": "TPSI",
+	"email_aluno": "a21270246@alunos.isec.pt",
+	"email_professor": "test@isec.pt",
+	"url": "https://www.momondo.pt/hotels/",
+	"dados": {
+		"nome": Nome,
+		"preço": Preco,
+		"desconto": Desconto
+    }
+}
