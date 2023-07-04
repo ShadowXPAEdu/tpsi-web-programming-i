@@ -1,0 +1,15 @@
+#slides .div.slide {
+	display: none;
+    animation: anim 5s;
+}
+
+#slides .div.slide.active {
+	display: flex;
+}
+
+@keyframes anim {
+	0% {opacity: 0;}
+	5% {opacity: 1;}
+	95% {opacity: 1;}
+	100% {opacity: 0;}
+}

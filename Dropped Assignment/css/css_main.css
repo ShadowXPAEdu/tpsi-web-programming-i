@@ -1,0 +1,22 @@
+body {
+	font-family: Arial;
+}
+
+#home, #empresa, #produtos, #contactos, #login {
+	position: absolute;
+	background: transparent;
+	z-index: -1;
+	width: 100%;
+}
+
+.section {
+	display: none;
+}
+
+.section.active {
+	display: block;
+}
+
+img {
+	pointer-events: none;
+}

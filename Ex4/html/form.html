@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Exercício 4</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="../css/css_reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/css_main.css" />
+	</head>
+	
+	<body>
+
+		<h1>Formulário</h1>
+
+		<div id="main-form">
+			<form id="form-id" action="?" method="post" onsubmit="return x()">
+				<label for="name">Nome de programador *</label>
+				<input type="text" maxlength="10" id="name" name="Name" placeholder="Nome" />
+				<label for="email">E-mail *</label>
+				<input type="email" maxlength="50" id="email" name="eMail" placeholder="exemplo@email.com" />
+				<label for="so">Sistema Operativo (SO) Favorito *</label>
+				<select id="so" name="SO">
+					<option id="req" value="0" disabled selected>Seleccione o SO</option>
+					<optgroup label="Microsoft">
+						<option value="XP">Windows XP</option>
+						<option value="Vista">Windows Vista</option>
+						<option value="8">Windows 8</option>
+						<option value="10">Windows 10</option>
+					</optgroup>
+					<optgroup label="Linux">
+						<option value="CentOS">CentOS</option>
+						<option value="Ubu">Ubunto</option>
+						<option value="Fed">Fedora</option>
+					</optgroup>
+					<optgroup label="Outros">
+						<option value="iOS">iOS</option>
+						<option value="Sol">Solaris</option>
+						<option value="Out">Outro</option>
+					</optgroup>
+				</select>
+				<label for="pass">Password *</label>
+				<input type="password" maxlength="22" id="pass" name="Password" />
+				<label for="pass2">Confirme a Password *</label>
+				<input type="password" maxlength="22" id="pass2" name="Password2" />
+				<input type="checkbox" id="check" name="checkbox" />
+				<label for="check">Permite o uso desta informação para fins estatísticos *</label>
+				<input type="submit" name="sub" id="sub-but" value="Enviar" />
+			</form>
+		</div>
+
+		<script src="../js/js_valida.js"></script>
+	</body>
+
+</html>

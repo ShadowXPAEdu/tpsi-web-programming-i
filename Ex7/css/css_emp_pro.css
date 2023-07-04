@@ -1,0 +1,70 @@
+#empresa-content h1, #empresa-content p, #produtos-content h1, #produtos-content p {
+	color: #000;
+}
+
+#empresa-content .emp.content .img img, #produtos-content .pro.content .img img {
+	height: 350px;
+	width: inherit;
+	background: #EEE;
+}
+
+.emp.desc *, .pro.desc * {
+	text-align: center;
+	margin: 1.1em auto 0 auto;
+}
+
+#empresa-content .emp.desc p, #produtos-content .pro.desc p {
+	color: rgba(0, 0, 0, 0.5);
+	margin: 1em auto 0 auto;
+	font-size: 1.5em;
+}
+
+.emp.content, .pro.content {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 75%;
+	margin: 6em auto 0 auto;
+}
+
+.emp.content > *, .pro.content > * {
+	min-height: 550px;
+	max-height: 550px;
+	width: 350px;
+	margin: 0 auto;
+	background-color: #54AFC2;
+	border: none;
+}
+
+.emp.content > * .sqr-content, .pro.content > * .sqr-content {
+	padding: 20px;
+}
+
+.emp.content h2, .pro.content h2 {
+	color: #FFF;
+	font-weight: bold;
+}
+
+#empresa-content .emp.content p, #produtos-content .pro.content p {
+	margin: 1.1em auto;
+	line-height: 2em;
+	font-size: 0.8em;
+	color: #FFF;
+}
+
+@media (max-width: 1400px) {
+	.emp.content, .pro.content {
+		width: 95%;
+	}
+}
+
+@media (max-width: 1130px) {
+	.emp.content, .pro.content {
+		flex-flow: column nowrap;
+	}
+	
+	.emp.content > *, .pro.content > * {
+		margin: 1.1em auto;
+	}
+}

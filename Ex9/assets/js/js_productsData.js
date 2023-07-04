@@ -1,0 +1,108 @@
+var products = [
+	{
+		"id": 1,
+		"name": "Product A",
+		"description": "Product A is very cool and fresh",
+		"type": "carne",
+		"image": "assets/images/1.jpg",
+		"price": 2,
+		"currency": "€"
+	},
+	{
+		"id": 2,
+		"name": "Product B",
+		"description": "Product B is very cool and fresh",
+		"type": "peixe",
+		"image": "assets/images/2.jpg",
+		"price": 5,
+		"currency": "€"
+	},
+	{
+		"id": 3,
+		"name": "Product C",
+		"description": "Product C is very cool and fresh",
+		"type": "sobremesa",
+		"image": "assets/images/3.jpg",
+		"price": 1,
+		"currency": "€"
+	},
+	{
+		"id": 4,
+		"name": "Product D",
+		"description": "Product D is very cool and fresh",
+		"type": "carne",
+		"image": "assets/images/4.jpg",
+		"price": 4,
+		"currency": "€"
+	},
+	{
+		"id": 5,
+		"name": "Product E",
+		"description": "Product E is very cool and fresh",
+		"type": "peixe",
+		"image": "assets/images/5.jpg",
+		"price": 3,
+		"currency": "€"
+	},
+	{
+		"id": 6,
+		"name": "Product F",
+		"description": "Product F is very cool and fresh",
+		"type": "sobremesa",
+		"image": "assets/images/6.jpg",
+		"price": 6,
+		"currency": "€"
+	},
+	{
+		"id": 7,
+		"name": "Product G",
+		"description": "Product G is very cool and fresh",
+		"type": "carne",
+		"image": "assets/images/7.jpg",
+		"price": 9,
+		"currency": "€"
+	},
+	{
+		"id": 8,
+		"name": "Product H",
+		"description": "Product H is very cool and fresh",
+		"type": "peixe",
+		"image": "assets/images/8.jpg",
+		"price": 4,
+		"currency": "€"
+	},
+	{
+		"id": 9,
+		"name": "Product I",
+		"description": "Product I is very cool and fresh",
+		"type": "sobremesa",
+		"image": "assets/images/9.jpg",
+		"price": 10,
+		"currency": "€"
+	},
+	{
+		"id": 10,
+		"name": "Product J",
+		"description": "Product J is very cool and fresh",
+		"type": "carne",
+		"image": "assets/images/10.jpg",
+		"price": 9,
+		"currency": "€"
+	}
+];
+
+function drawProducts() {
+	for (var i = 0; i < products.length; i++) {
+		var clone = $('#page-body > .template').clone();
+		$(clone).addClass(products[i].type);
+		$(clone).removeClass('template');
+		$(clone).attr('data-product-id', products[i].id);
+		$(clone).find('.product-name').text(products[i].name);
+		$(clone).find('.product-description').text(products[i].description);
+		$(clone).find('.product-price').text(products[i].price + " " + products[i].currency); // + " " + products[i].currency
+		$(clone).find('.product-image img').attr('src', products[i].image);
+		$('#products-list').append(clone);
+	}
+}
+
+drawProducts();

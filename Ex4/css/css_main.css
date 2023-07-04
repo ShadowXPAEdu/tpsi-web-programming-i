@@ -1,0 +1,49 @@
+body {
+	font-family: Arial;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 32px;
+	text-align: center;
+	padding: 22px 0;
+}
+
+div#main-form {
+	width: 30%;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: 1px solid #CCC;
+	background-color: #EEE;
+}
+
+form#form-id {
+	padding: 22px;
+}
+
+input, select {
+	border: 1px solid #CCC;
+	border-radius: 4px;
+	box-sizing: border-box;
+	display: inline-block;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+}
+
+input[type=checkbox] {
+	width: auto;
+}
+
+input[type=submit] {
+	background-color: #39F;
+	border: 0;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+input[type=submit]:hover {
+	background-color: #17D;
+}
